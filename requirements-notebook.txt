@@ -1,0 +1,18 @@
+# Minimal dependencies for ppi_vs_muscle_analysis.ipynb (code-only Zenodo record)
+# Tested with Python 3.14.x and venv in article0_2b
+# Install: pip install -r requirements-notebook.txt
+
+pandas==3.0.3
+numpy==2.4.6
+scipy==1.17.1
+matplotlib==3.10.9
+plotnine==0.15.4
+mizani==0.14.4
+statsmodels==0.14.6
+patsy==1.0.2
+tableone==0.9.6
+tabulate==0.10.0
+openpyxl==3.1.5
+
+# Optional: only if running the notebook in Jupyter/VS Code (not required to read the .ipynb)
+ipykernel==7.2.0
