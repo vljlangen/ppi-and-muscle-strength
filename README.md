@@ -1,6 +1,6 @@
 # PPI and muscle strength in older adults
 
-Analysis code for PPI use vs grip strength, walking speed, armchair test, CCI, and non-vitamin drug count.
+Analysis code for PPI use in relation to muscle function (grip strength, walking speed, armchair test).
 
 ## Files
 
