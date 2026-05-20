@@ -1,18 +1,21 @@
-# Minimal dependencies for ppi_vs_muscle_analysis.ipynb (code-only Zenodo record)
-# Tested with Python 3.14.x and venv in article0_2b
-# Install: pip install -r requirements-notebook.txt
+# Minimal dependencies for ppi_vs_muscle_analysis.ipynb (Zenodo / reproducibility)
+#
+# Intended Python: Apple CLT 3.9.6 — create venv with:
+#   /usr/bin/python3 -m venv .venv
+#   .venv/bin/python -m pip install -U pip setuptools wheel
+#   .venv/bin/pip install -r requirements-notebook.txt
+#
+# (pandas 3.x requires Python >= 3.11, so this file pins a 3.9-compatible stack.)
 
-pandas==3.0.3
-numpy==2.4.6
-scipy==1.17.1
-matplotlib==3.10.9
-plotnine==0.15.4
-mizani==0.14.4
+pandas==2.2.3
+numpy==2.0.2
+scipy==1.13.1
+matplotlib==3.9.4
+plotnine==0.13.6
+mizani==0.11.4
 statsmodels==0.14.6
 patsy==1.0.2
 tableone==0.9.6
-tabulate==0.10.0
+tabulate==0.9.0
 openpyxl==3.1.5
-
-# Optional: only if running the notebook in Jupyter/VS Code (not required to read the .ipynb)
-ipykernel==7.2.0
+ipykernel==6.31.0

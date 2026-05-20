@@ -4,25 +4,22 @@ Analysis code for PPI use vs grip strength, walking speed, armchair test, CCI, a
 
 ## Files
 
-- `ppi_vs_muscle_analysis.ipynb` — analysis (code only; no outputs committed)
-- `requirements-notebook.txt` — Python dependencies
-- `create_*.R` — upstream R scripts (local; not part of Zenodo)
+- `ppi_vs_muscle_analysis.ipynb` — main analysis notebook.
+- `requirements-notebook.txt` — pinned Python packages for this notebook.
 
-## Data
+## Environment (Python 3.9.6)
 
-Participant-level data are **not** in this repo or on Zenodo. For local runs only, use an analytic table from the R pipeline as `ppi_and_muscle.csv` next to the notebook.
+Dependencies are managed in a **virtual environment** (`.venv`) so that package versions remain isolated from the system Python stack. After one-time configuration, the notebook is executed under that environment’s interpreter.
 
-## Setup
+Original data are not distributed with this repository; the documented workflow applies equally to externally supplied analytic tables or to synthetic inputs used for verification or instruction.
+
+In the directory that contains the notebook and `requirements-notebook.txt`:
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements-notebook.txt
+/usr/bin/python3 -m venv .venv
+.venv/bin/python -m pip install -U pip setuptools wheel
+.venv/bin/pip install -r requirements-notebook.txt
 ```
-
-Open the notebook in VS Code or Jupyter, select `venv`, run all cells. Writes `figures/` and `table1.xlsx` locally.
-
-Tested: Python 3.14, pandas 3.0.
 
 ## License
 
